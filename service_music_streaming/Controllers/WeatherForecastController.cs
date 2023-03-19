@@ -1,4 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
+
+
+
 
 namespace service_music_streaming.Controllers;
 
@@ -6,6 +10,8 @@ namespace service_music_streaming.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
+    
+
     private static readonly string[] Summaries = new[]
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -16,6 +22,8 @@ public class WeatherForecastController : ControllerBase
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
+        
+
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
@@ -29,5 +37,7 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+
+    
 }
 

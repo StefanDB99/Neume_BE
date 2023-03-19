@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="dataAccess\" />
+    <None Remove="dataAccess\Models\" />
+    <None Remove="dataAccess\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dataAccess\" />
+    <Folder Include="dataAccess\Models\" />
+    <Folder Include="dataAccess\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contract_Layer\Contract_Layer.csproj" />
+  </ItemGroup>
+</Project>

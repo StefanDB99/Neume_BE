@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Test\" />
+    <None Remove="Logic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test\" />
+    <Folder Include="Logic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DAL.csproj" />
+    <ProjectReference Include="..\Contract_Layer\Contract_Layer.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Song_Logic\ISong.cs" />
+    <Compile Remove="Song_Logic\Song.cs" />
+  </ItemGroup>
+</Project>
