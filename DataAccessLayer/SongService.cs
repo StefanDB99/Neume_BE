@@ -15,7 +15,7 @@ namespace DAL
 
         public async Task<SongDTO> GetSong()
         {
-            MongoClient dbClient = new MongoClient("mongodb://localhost:27017");
+            MongoClient dbClient = new MongoClient("mongodb://172.19.0.3:27017");
 
             var database = dbClient.GetDatabase("songs");
 
