@@ -5,6 +5,29 @@ VisualStudioVersion = 25.0.1705.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service_music_streaming", "service_music_streaming\service_music_streaming.csproj", "{A7904980-B560-437E-A080-48FCEAD3F362}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DataAccessLayer\DAL.csproj", "{2954F1EE-E37C-475E-B599-9D34AC9BB64C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{08ACC281-3B81-4B74-A4D5-1034A8D3156C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISL", "ISL\ISL.csproj", "{FAAE55BC-93C5-457B-8FCB-F86E1A3D1352}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business_Layer", "Business_Layer", "{8835EF1C-FF19-4D2B-870A-C6AAEAF951DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data_Access_Layer", "Data_Access_Layer", "{A12C724F-0BBC-42E7-ABB7-C113986474AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application_Layer", "Application_Layer", "{E32EBFE2-D272-431C-BC46-E55DF19AE51C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure_Layer", "Infrastructure_Layer", "{6BD44090-3EB3-44F6-8D3D-AB33F5D44245}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contract_Layer", "Contract_Layer", "{B6F8141B-0254-42A2-96CE-4DF4BAF46B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contract_Layer", "Contract_Layer\Contract_Layer.csproj", "{AA278D41-1F7A-4B2E-B63F-ECB38D5D00E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F8D1C268-66DB-4322-9B3A-49016B6757DE}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +38,34 @@ Global
 		{A7904980-B560-437E-A080-48FCEAD3F362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7904980-B560-437E-A080-48FCEAD3F362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7904980-B560-437E-A080-48FCEAD3F362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2954F1EE-E37C-475E-B599-9D34AC9BB64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2954F1EE-E37C-475E-B599-9D34AC9BB64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2954F1EE-E37C-475E-B599-9D34AC9BB64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2954F1EE-E37C-475E-B599-9D34AC9BB64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08ACC281-3B81-4B74-A4D5-1034A8D3156C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ACC281-3B81-4B74-A4D5-1034A8D3156C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ACC281-3B81-4B74-A4D5-1034A8D3156C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ACC281-3B81-4B74-A4D5-1034A8D3156C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAAE55BC-93C5-457B-8FCB-F86E1A3D1352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAAE55BC-93C5-457B-8FCB-F86E1A3D1352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAAE55BC-93C5-457B-8FCB-F86E1A3D1352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAAE55BC-93C5-457B-8FCB-F86E1A3D1352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA278D41-1F7A-4B2E-B63F-ECB38D5D00E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA278D41-1F7A-4B2E-B63F-ECB38D5D00E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA278D41-1F7A-4B2E-B63F-ECB38D5D00E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA278D41-1F7A-4B2E-B63F-ECB38D5D00E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FF27B1C-C109-40B7-AFC8-D3B943A46DE1}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08ACC281-3B81-4B74-A4D5-1034A8D3156C} = {8835EF1C-FF19-4D2B-870A-C6AAEAF951DB}
+		{2954F1EE-E37C-475E-B599-9D34AC9BB64C} = {A12C724F-0BBC-42E7-ABB7-C113986474AC}
+		{A7904980-B560-437E-A080-48FCEAD3F362} = {E32EBFE2-D272-431C-BC46-E55DF19AE51C}
+		{FAAE55BC-93C5-457B-8FCB-F86E1A3D1352} = {6BD44090-3EB3-44F6-8D3D-AB33F5D44245}
+		{AA278D41-1F7A-4B2E-B63F-ECB38D5D00E9} = {B6F8141B-0254-42A2-96CE-4DF4BAF46B91}
 	EndGlobalSection
 EndGlobal
